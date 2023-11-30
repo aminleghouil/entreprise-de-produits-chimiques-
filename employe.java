@@ -50,7 +50,7 @@ public class Representant extends Employeca{
 }
 
 
-public class Interface {
+public class interface Interface1 {
 	final double risk =200;
 }
 
@@ -70,7 +70,7 @@ public double calculSalaire() {
 }
 
 
-public class TechnARisque extends Technicien{
+public class TechnARisque extends Technicien implements Interface1{
 
 	public TechnARisque(String nom,String prenom,int age,int date ,double nb) {
 		super(nom,prenom,age,date,nb);
@@ -95,7 +95,7 @@ public class Manutentionnaire extends Employe{
 	}
 
 }
-public class ManutARisque extends Manutentionnaire{
+public class ManutARisque extends Manutentionnaire implements Interface1{
 
 	public ManutARisque(String nom,String prenom,int age,int date ,double nbr) {
 		super(nom,prenom,age,date,nbr);
