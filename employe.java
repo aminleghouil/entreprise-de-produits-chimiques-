@@ -112,14 +112,14 @@ public void ajouterEmploye(employe employee) {
 	personne.add(employee);
 }
 public void afficherSalaires(){
-	for(employe employee : personne) {
+	for(Employe employee : personne) {
 		System.out.println(employee.getNom()+" gagne "+employee.calculSalaire()+" dinars");
 	}
 }
 public double salaireMoyen() {
 	double s=0;
-	for(employe employee :personne) {
-		s=s+employye.calculSalaire();
+	for(Employe employee :personne) {
+		s=s+employee.calculSalaire();
 	}
 	return s/(personne.size());
 }
